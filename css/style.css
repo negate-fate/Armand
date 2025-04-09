@@ -49,13 +49,13 @@ header {
 }
 
 header .pfp {
-    width: 300px;
-    height: 300px;
+    width: 220px;
+    height: 220px;
     border: 20px solid rgb(255, 74, 74);
     border-radius: 50%;
     background-image: url("./../img/armand-avatar-sm.jpg");
     background-repeat: no-repeat;
-    background-position: -190px -120px;
+    background-position: -130px -90px;
     background-size: 170%;
     margin: 0 auto;
 }
@@ -81,8 +81,18 @@ h1 {
     margin: 20px 0;
   }
 
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+  }
+
   main {
-    width: 800px;
+    padding: 0 20px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -90,6 +100,7 @@ h1 {
     max-width: 100%;
   }
 
+  /* footer */
   footer {
     background-color: rgb(47, 115, 242);
     padding: 40px;
@@ -98,7 +109,7 @@ h1 {
   }
 
   footer .content {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -111,4 +122,8 @@ h1 {
     color: rgb(235, 176, 67);
   }
 
-
+  @media (max-width: 600px) {
+    footer p {
+      font-size: 16px;
+    }
+  }
